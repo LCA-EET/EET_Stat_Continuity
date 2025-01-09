@@ -1,0 +1,55 @@
+BACKUP ~EET_Stat_Continuity/backup~
+AUTHOR ~Daniel Valle, dan@danielvalle.net~
+AUTO_TRA ~%MOD_FOLDER%/tra/%s~ //automatically associate .tras to their respective .D files
+AUTO_EVAL_STRINGS
+LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra/english/xaeetsc.tra~
+
+BEGIN
+
+@0 /* ~EET Stat Continuity~ */
+
+INCLUDE ~%MOD_FOLDER%/functions.tph~
+INCLUDE ~%MOD_FOLDER%/scriptnames.tph~
+
+LAF xa_cleartempfiles END
+
+COMPILE ~%MOD_FOLDER%/baf~
+
+OUTER_SET xa_tempID = 0
+
+ACTION_IF (GAME_IS ~eet~) THEN BEGIN
+	OUTER_SET isEET = 1
+	PRINT @1  // ~Enhanced Edition Trilogy (EET) mod has been detected.~ 
+END ELSE BEGIN
+	OUTER_SET isEET = 0
+	PRINT @2  // ~Enhanced Edition Trilogy (EET) mod has NOT been detected.~ 
+END
+
+ACTION_IF (isEET = 0) THEN BEGIN
+	ABORT @3
+END
+
+ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
+	//PRINT ~%bg1sod%~
+	//PRINT ~%bg2%~
+	LAF xa_replace_recompile_iterate
+		INT_VAR
+			xa_max_iterations = 26
+			xa_iterations = 3
+			xa_find = 6686
+		STR_VAR
+			xa_bcs = ~xasc~
+			xa_extend = ~xascbg1~
+	END
+
+	LAF xa_replace_recompile_string2
+		STR_VAR
+			xa_strToReplace = ~TO_REPLACE~
+			xa_replacement = ~%bg1sod%~
+			xa_bcs = ~xascbg1~
+			xa_extend = ~baldur~
+	END
+END
+
+
+

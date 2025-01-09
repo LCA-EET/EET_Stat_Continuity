@@ -1,0 +1,16 @@
+/* Usage: Enter the SCRIPT NAME of the BG1 or SoD character into the left operand, and the corresponding script name for that character into the right operand. Multiple script names can be entered. */
+/* For example, for Corwin (SoD) and the LCA Mod, you could do the following:
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY scriptNames BEGIN
+  Corwin => XACORWIN
+  bg1name1 => bg2name1
+  bg1name2 => bg2name2
+  and so on...
+END
+*/
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY scriptNames BEGIN
+  Corwin => XACORWIN
+  bg1name => bg2name
+END
+

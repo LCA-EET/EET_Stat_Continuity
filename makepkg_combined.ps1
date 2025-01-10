@@ -22,7 +22,7 @@ foreach($folder in $toExclude){
 
 & $PSScriptRoot/d_compactor.ps1 -dPath $modPath
 
-Copy-Item -Path ("functions.tph") -Destination $modPath 
+Copy-Item -Path ("..\LCA\EE\functions.tph") -Destination $modPath 
 Copy-Item -Path ($tp2Name + ".tp2") -Destination $modPath 
 Copy-Item -Path "weidu.exe" -Destination ($basePath + "/" + $exePath)
 Copy-Item -Path "Discord Server.url" -Destination ($basePath + "/Discord Server.url")

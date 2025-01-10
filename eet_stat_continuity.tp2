@@ -49,6 +49,16 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 			xa_bcs = ~xascbg1~
 			xa_extend = ~baldur~
 	END
+	
+	EXTEND_TOP ~bdbaldur.bcs~ ~xascbg1.bcs~
+	
+	LAF xa_replace_recompile_string2
+		STR_VAR
+			xa_strToReplace = ~TO_REPLACE~
+			xa_replacement = ~%bg2%~
+			xa_bcs = ~xascbg1~
+			xa_extend = ~baldur~
+	END
 END
 
 

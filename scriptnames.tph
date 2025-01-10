@@ -10,7 +10,13 @@ END
 */
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY scriptNames BEGIN
-  Corwin => XACORWIN
-  bg1name => bg2name
+	Dorn => Dorn
+	Edwin => Edwin
+	Imoen => Imoen2
+	Jaheira => Jaheira
+	Minsc => Minsc
+	Neera => Neera
+	Rasaad => Rasaad
+	Viconia => Viconia
 END
 

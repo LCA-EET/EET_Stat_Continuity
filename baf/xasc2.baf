@@ -1,0 +1,53 @@
+IF
+	InParty("TO_REPLACEBG2")
+	Global("XA_ESC_TO_REPLACEBG1_STR", "GLOBAL", 6686)
+THEN
+	RESPONSE #100
+		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, STR, 6686, SET))
+		Continue()
+END
+
+IF
+	InParty("TO_REPLACEBG2")
+	Global("XA_ESC_TO_REPLACEBG1_INT", "GLOBAL", 6686)
+THEN
+	RESPONSE #100
+		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, INT, 6686, SET))
+		Continue()
+END
+
+IF
+	InParty("TO_REPLACEBG2")
+	Global("XA_ESC_TO_REPLACEBG1_WIS", "GLOBAL", 6686)
+THEN
+	RESPONSE #100
+		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, WIS, 6686, SET))
+		Continue()
+END
+
+IF
+	InParty("TO_REPLACEBG2")
+	Global("XA_ESC_TO_REPLACEBG1_DEX", "GLOBAL", 6686)
+THEN
+	RESPONSE #100
+		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, DEX, 6686, SET))
+		Continue()
+END
+
+IF
+	InParty("TO_REPLACEBG2")
+	Global("XA_ESC_TO_REPLACEBG1_CON", "GLOBAL", 6686)
+THEN
+	RESPONSE #100
+		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, CON, 6686, SET))
+		Continue()
+END
+
+IF
+	InParty("TO_REPLACEBG2")
+	Global("XA_ESC_TO_REPLACEBG1_CHR", "GLOBAL", 6686)
+THEN
+	RESPONSE #100
+		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, CHR, 6686, SET))
+		Continue()
+END

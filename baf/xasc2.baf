@@ -2,7 +2,7 @@ IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_STR", "GLOBAL", 6686)
 	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
-	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, STR, 6686))
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, 6686, STR))
 	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_STR", "LOCALS", 1))
 THEN
 	RESPONSE #100
@@ -15,7 +15,7 @@ IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_INT", "GLOBAL", 6686)
 	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
-	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, INT, 6686))
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, 6686, INT))
 	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_INT", "LOCALS", 1))
 THEN
 	RESPONSE #100
@@ -28,7 +28,7 @@ IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_WIS", "GLOBAL", 6686)
 	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
-	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, WIS, 6686))
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, 6686, WIS))
 	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_WIS", "LOCALS", 1))
 THEN
 	RESPONSE #100
@@ -41,7 +41,7 @@ IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_DEX", "GLOBAL", 6686)
 	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
-	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, DEX, 6686))
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, 6686, DEX))
 	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_DEX", "LOCALS", 1))
 THEN
 	RESPONSE #100
@@ -54,7 +54,7 @@ IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_CON", "GLOBAL", 6686)
 	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
-	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, CON, 6686))
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, 6686, CON))
 	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_CON", "LOCALS", 1))
 THEN
 	RESPONSE #100
@@ -67,7 +67,7 @@ IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_CHR", "GLOBAL", 6686)
 	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
-	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, CHR, 6686))
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, 6686, CHR))
 	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_CHR", "LOCALS", 1))
 THEN
 	RESPONSE #100

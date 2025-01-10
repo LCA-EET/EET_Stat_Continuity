@@ -1,53 +1,77 @@
 IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_STR", "GLOBAL", 6686)
+	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, STR, 6686))
+	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_STR", "LOCALS", 1))
 THEN
 	RESPONSE #100
-		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, STR, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", ChangeStat(Myself, STR, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", SetGlobal("XA_ESC_Set_STR", "LOCALS", 1))
 		Continue()
 END
 
 IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_INT", "GLOBAL", 6686)
+	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, INT, 6686))
+	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_INT", "LOCALS", 1))
 THEN
 	RESPONSE #100
-		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, INT, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", ChangeStat(Myself, INT, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", SetGlobal("XA_ESC_Set_INT", "LOCALS", 1))
 		Continue()
 END
 
 IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_WIS", "GLOBAL", 6686)
+	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, WIS, 6686))
+	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_WIS", "LOCALS", 1))
 THEN
 	RESPONSE #100
-		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, WIS, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", ChangeStat(Myself, WIS, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", SetGlobal("XA_ESC_Set_WIS", "LOCALS", 1))
 		Continue()
 END
 
 IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_DEX", "GLOBAL", 6686)
+	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, DEX, 6686))
+	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_DEX", "LOCALS", 1))
 THEN
 	RESPONSE #100
-		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, DEX, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", ChangeStat(Myself, DEX, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", SetGlobal("XA_ESC_Set_DEX", "LOCALS", 1))
 		Continue()
 END
 
 IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_CON", "GLOBAL", 6686)
+	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, CON, 6686))
+	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_CON", "LOCALS", 1))
 THEN
 	RESPONSE #100
-		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, CON, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", ChangeStat(Myself, CON, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", SetGlobal("XA_ESC_Set_CON", "LOCALS", 1))
 		Continue()
 END
 
 IF
 	InParty("TO_REPLACEBG2")
 	Global("XA_ESC_TO_REPLACEBG1_CHR", "GLOBAL", 6686)
+	Global("XA_ESC_StartedBG2", "GLOBAL", 1)
+	TriggerOverride("TO_REPLACEBG2", CheckStatLT(Myself, CHR, 6686))
+	TriggerOverride("TO_REPLACEBG2", GlobalLT("XA_ESC_Set_CHR", "LOCALS", 1))
 THEN
 	RESPONSE #100
-		ActionOverride("TO_REPLACEBG1", ChangeStat(Myself, CHR, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", ChangeStat(Myself, CHR, 6686, SET))
+		ActionOverride("TO_REPLACEBG2", SetGlobal("XA_ESC_Set_CHR", "LOCALS", 1))
 		Continue()
 END

@@ -30,8 +30,6 @@ ACTION_IF (isEET = 0) THEN BEGIN
 END
 
 ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
-	//PRINT ~%bg1sod%~
-	//PRINT ~%bg2%~
 	LAF xa_replace_recompile_iterate
 		INT_VAR
 			xa_max_iterations = 26
@@ -52,11 +50,23 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 	
 	EXTEND_TOP ~bdbaldur.bcs~ ~xascbg1.bcs~
 	
-	LAF xa_replace_recompile_string2
+	LAF xa_replace_recompile_iterate
+		INT_VAR
+			xa_max_iterations = 26
+			xa_iterations = 3
+			xa_find = 6686
 		STR_VAR
-			xa_strToReplace = ~TO_REPLACE~
-			xa_replacement = ~%bg2%~
-			xa_bcs = ~xascbg1~
+			xa_bcs = ~xasc2~
+			xa_extend = ~xascbg2~
+	END
+	
+	LAF xa_replace_recompile_string3
+		STR_VAR
+			xa_strToReplace1 = ~TO_REPLACEBG2~
+			xa_replacement1 = ~%bg2%~
+			xa_strToReplace2 = ~TO_REPLACEBG1~
+			xa_replacement2 = ~%bg1sod%~
+			xa_bcs = ~xascbg2~
 			xa_extend = ~baldur~
 	END
 END

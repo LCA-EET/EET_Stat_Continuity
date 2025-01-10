@@ -1,0 +1,10 @@
+IF
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
+	OR(2)
+		AreaCheck("AR0602")
+		AreaCheck("AR0700")
+THEN
+	RESPONSE #100
+		SetGlobal("XA_ESC_StartedBG2", "GLOBAL", 1)
+		Continue()
+END

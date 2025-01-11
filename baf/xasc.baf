@@ -2,6 +2,7 @@ IF
 	InParty("TO_REPLACE")
 	TriggerOverride("TO_REPLACE", CheckStat(Myself, 6686, STR))
 	GlobalLT("XA_ESC_TO_REPLACE_STR", "GLOBAL", 6686)
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
 THEN
 	RESPONSE #100
 		SetGlobal("XA_ESC_TO_REPLACE_STR", "GLOBAL", 6686)
@@ -12,6 +13,7 @@ IF
 	InParty("TO_REPLACE")
 	TriggerOverride("TO_REPLACE", CheckStat(Myself, 6686, INT))
 	GlobalLT("XA_ESC_TO_REPLACE_INT", "GLOBAL", 6686)
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
 THEN
 	RESPONSE #100
 		SetGlobal("XA_ESC_TO_REPLACE_INT", "GLOBAL", 6686)
@@ -22,6 +24,7 @@ IF
 	InParty("TO_REPLACE")
 	TriggerOverride("TO_REPLACE", CheckStat(Myself, 6686, WIS))
 	GlobalLT("XA_ESC_TO_REPLACE_WIS", "GLOBAL", 6686)
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
 THEN
 	RESPONSE #100
 		SetGlobal("XA_ESC_TO_REPLACE_WIS", "GLOBAL", 6686)
@@ -32,6 +35,7 @@ IF
 	InParty("TO_REPLACE")
 	TriggerOverride("TO_REPLACE", CheckStat(Myself, 6686, DEX))
 	GlobalLT("XA_ESC_TO_REPLACE_DEX", "GLOBAL", 6686)
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
 THEN
 	RESPONSE #100
 		SetGlobal("XA_ESC_TO_REPLACE_DEX", "GLOBAL", 6686)
@@ -42,6 +46,7 @@ IF
 	InParty("TO_REPLACE")
 	TriggerOverride("TO_REPLACE", CheckStat(Myself, 6686, CON))
 	GlobalLT("XA_ESC_TO_REPLACE_CON", "GLOBAL", 6686)
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
 THEN
 	RESPONSE #100
 		SetGlobal("XA_ESC_TO_REPLACE_CON", "GLOBAL", 6686)
@@ -52,6 +57,7 @@ IF
 	InParty("TO_REPLACE")
 	TriggerOverride("TO_REPLACE", CheckStat(Myself, 6686, CHR))
 	GlobalLT("XA_ESC_TO_REPLACE_CHR", "GLOBAL", 6686)
+	GlobalLT("XA_ESC_StartedBG2", "GLOBAL", 1)
 THEN
 	RESPONSE #100
 		SetGlobal("XA_ESC_TO_REPLACE_CHR", "GLOBAL", 6686)

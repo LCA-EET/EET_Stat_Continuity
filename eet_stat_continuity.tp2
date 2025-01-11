@@ -29,7 +29,13 @@ ACTION_IF (isEET = 0) THEN BEGIN
 	ABORT @3
 END
 
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/baf/xabalesc.baf~
+
 ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
+	PRINT ~Processing %bg1sod% => %bg2%~
+	
+	SILENT
+	
 	LAF xa_replace_recompile_iterate
 		INT_VAR
 			xa_max_iterations = 26
@@ -40,6 +46,8 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 			xa_extend = ~xascbg1~
 	END
 
+	SILENT
+	
 	LAF xa_replace_recompile_string2
 		STR_VAR
 			xa_strToReplace = ~TO_REPLACE~
@@ -48,7 +56,9 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 			xa_extend = ~baldur~
 	END
 	
-	EXTEND_TOP ~bdbaldur.bcs~ ~xascbg1.bcs~
+	SILENT 
+	
+	EXTEND_TOP ~bdbaldur.bcs~ ~override/xascbg1.bcs~
 	
 	LAF xa_replace_recompile_iterate
 		INT_VAR
@@ -60,6 +70,8 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 			xa_extend = ~xascbg2~
 	END
 	
+	SILENT 
+	
 	LAF xa_replace_recompile_string3
 		STR_VAR
 			xa_strToReplace1 = ~TO_REPLACEBG2~
@@ -69,6 +81,8 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 			xa_bcs = ~xascbg2~
 			xa_extend = ~baldur~
 	END
+	
+	SILENT
 END
 
 

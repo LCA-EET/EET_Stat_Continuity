@@ -39,7 +39,7 @@ ACTION_PHP_EACH scriptNames AS bg1sod => bg2 BEGIN
 	LAF xa_replace_recompile_iterate
 		INT_VAR
 			xa_max_iterations = 26
-			xa_iterations = 3
+			xa_iterations = 10
 			xa_find = 6686
 		STR_VAR
 			xa_bcs = ~xasc~

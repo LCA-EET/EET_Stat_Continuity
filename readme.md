@@ -5,3 +5,6 @@ Before installing the mod, be sure to update scriptnames.tph to include the scri
 
 If you don't know the script name for a character, you can use a tool like NearInfinity to open up the .cre file to see what it is. 
 
+###Installation Order
+
+This mod must be installed AFTER EET core. It can be installed before OR after EET end. 

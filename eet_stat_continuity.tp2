@@ -3,6 +3,7 @@ AUTHOR ~Daniel Valle, dan@danielvalle.net~
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~ //automatically associate .tras to their respective .D files
 AUTO_EVAL_STRINGS
 LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra/english/xaeetsc.tra~
+		~Simplified Chinese~ ~schinese~ ~%MOD_FOLDER%/tra/schinese/xaeetsc.tra~
 
 BEGIN
 
